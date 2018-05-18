@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/leaguealytics.iml" filepath="$PROJECT_DIR$/leaguealytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leaguealytics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/leaguealytics_main.iml" group="leaguealytics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leaguealytics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/leaguealytics_test.iml" group="leaguealytics" />
+    </modules>
+  </component>
+</project>
