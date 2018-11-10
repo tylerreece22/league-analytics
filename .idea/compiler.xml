@@ -4,9 +4,5 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="leaguealytics_main" target="1.9" />
-      <module name="leaguealytics_test" target="1.9" />
-    </bytecodeTargetLevel>
   </component>
 </project>
