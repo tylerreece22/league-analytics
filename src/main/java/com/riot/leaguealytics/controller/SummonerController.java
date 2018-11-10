@@ -1,18 +1,24 @@
 package com.riot.leaguealytics.controller;
 
 import com.riot.leaguealytics.dto.Summoner;
+import com.riot.leaguealytics.service.SummonerService;
 import io.swagger.annotations.Api;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.URISyntaxException;
+
 @RestController
-@RequestMapping("/summoner")
 @Api(value = "summoner", description = "This will show summoner information")
 public class SummonerController {
 
-    @GetMapping
-    public Summoner get(int summonerId) {
-        return new Summoner();
+    @Autowired
+    private SummonerService summonerService;
+
+    @RequestMapping("summoner/{summonerName}")
+    public Summoner get(@PathVariable String summonerName) throws URISyntaxException {
+        return summonerService.get(summonerName);
     }
 }
